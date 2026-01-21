@@ -1,0 +1,61 @@
+/* Notification animations */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Copy button success state */
+.button.button-primary.success {
+    background: #00a32a;
+    border-color: #00a32a;
+}
+
+/* Loading spinner in buttons */
+.button .spinner {
+    float: none;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+/* Smooth transitions */
+.output-actions .button {
+    transition: all 0.2s ease;
+}
+
+.output-actions .button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.output-actions .button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+/* Success button state */
+.button.button-success {
+    background: #00a32a !important;
+    border-color: #00a32a !important;
+    color: white !important;
+}
+
+.button.button-success:hover {
+    background: #008a20 !important;
+    border-color: #008a20 !important;
+}
+
+/* Notification link styling */
+.ai-studio-notification a {
+    color: white !important;
+    text-decoration: underline !important;
+    font-weight: 600;
+}
+
+.ai-studio-notification a:hover {
+    opacity: 0.8;
+}
